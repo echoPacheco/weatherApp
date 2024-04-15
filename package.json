@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "dev": "sass --watch ./styles/global.scss ./styles/global.css"
+    },
+    "dependencies": {
+        "moment": "^2.30.1",
+        "sass": "^1.74.1"
+    }
+}

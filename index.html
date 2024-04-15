@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <nav>Weather App</nav>
+        <main>
+            <section>
+                <div class="input-cities">
+                    <select name="fav-cities" id="fav-cities"></select>
+                    <input
+                        id="input-city"
+                        placeholder="Enter a place"
+                        type="text"
+                    />
+                </div>
+            </section>
+            <section id="current-weather">
+                <div id="img-background">
+                    <div class="weather-container">
+                        <img
+                            alt="Empty Star Icon"
+                            class="fav-city-icon"
+                            id="weather-image"
+                            onclick="checkFavorite(true)"
+                        />
+                        <span id="city-name"></span>
+                        <span id="main-temp"></span>
+
+                        <div>
+                            <p id="main-weather"></p>
+                            <img id="current-weather-icon" />
+                        </div>
+                        <div>
+                            <p id="max-temp"></p>
+                            <p id="min-temp"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="forecast-container">
+                Daily Forecast
+                <div id="daily-forecast"></div>
+            </section>
+            <section id="hour-container">
+                <p id="display-day"></p>
+                <div id="hour-range"></div>
+            </section>
+        </main>
+        <script src="js/scripts.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjt6wQqe3rXtXPLUpMEJuzGdkMbJIFKh8&libraries=places&language=en"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    </body>
+</html>
